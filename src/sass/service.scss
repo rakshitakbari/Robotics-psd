@@ -1,0 +1,24 @@
+#service{
+    margin: 80px 0;
+    @include media-breakpoint-down(md){
+        margin: 40px 0;
+    }
+    .single-offered-service{
+        img {
+            width: 100%;
+        }
+        h4{
+            font-size: 18px;
+            color: $black;
+            line-height: 1.2em;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.625em;
+            color: #777777;
+        }
+    }
+}

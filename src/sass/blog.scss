@@ -1,0 +1,69 @@
+#blog{
+    margin: 80px 0;
+    @include media-breakpoint-down(md){
+        margin: 40px 0;
+    }
+    .blog-left{
+        .thumb{
+            img {
+                border-radius: 10px;
+            }
+        }
+        .detais{
+            .tags {
+                margin: 15px 0;
+                padding-left: 0;
+                li {
+                    display: inline-block;
+                    padding: 4px 15px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    -webkit-transition: all 0.3s ease 0s;
+                    -moz-transition: all 0.3s ease 0s;
+                    -o-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+                    border: 1px solid transparent;
+                    background-image: -webkit-linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+                    &:hover{
+                        border-color: #eee;
+                        background: $white;
+                        a{
+                            color: #777777 !important;
+                        }
+                    }
+                    a {
+                        -webkit-transition: all 0.3s ease 0s;
+                        -moz-transition: all 0.3s ease 0s;
+                        -o-transition: all 0.3s ease 0s;
+                        transition: all 0.3s ease 0s;
+                        color: $white;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            h4 {
+                font-size: 18px;
+                color: $black;
+                line-height: 1.2em;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+            p{
+                color: #777777;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.625em;
+            }
+            .date {
+                color: $black;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.625em;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
